@@ -1,0 +1,25 @@
+[package]
+name = "slate-dock"
+version = "0.0.1"
+authors = ["IntrepidPig <bennycaguilera@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+log = "0.4.8"
+fern = "0.5.8"
+chrono = "0.4.9"
+
+[dependencies.xcb]
+version = "0.8.2"
+features = ["randr"]
+
+[dependencies.cairo-rs]
+version = "0.7.1"
+features = ["xcb"]
+
+[dependencies.cairo-sys-rs]
+version = "0.9.0"
+features = ["xcb"]
+
+[dependencies.raw-brass]
+path = "../raw-brass"
